@@ -16,7 +16,7 @@ def handle_client(client_socket, client_address):
     client_socket.close()
 
 def main():
-    host = '127.0.0.1'  # To allow connections from any IP
+    host = '0.0.0.0'  # To allow connections from any IP
     port = 12345
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server.bind((host, port))
