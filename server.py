@@ -44,7 +44,7 @@ def handle_client(client_socket, client_address):
 
 def main():
     host = '0.0.0.0'  # Bind to all interfaces
-    port = int(os.environ.get('PORT', 8080))  # Use Railway-assigned port or fallback
+    port = int(os.environ.get('PORT', 12345))  # Use Railway-assigned port or fallback
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server.bind((host, port))
     server.listen(5)
